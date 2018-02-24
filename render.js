@@ -29,11 +29,12 @@ window.addEventListener('mouseup', (e) =>{
   var options = {
     dx: line.vectorX()/speed,
     dy: line.vectorY()/speed,
-    elasticity: 0.5
+    elasticity: 0.9,
+    spin: 2
   }
   var x = line.x1;
   var y = line.y1;
-  var w = h = 50;
+  var w = h = 10;
   var go = new GameObject(x, y, w, h, options);
   gameObjects.push(go);
   window.aim = null;

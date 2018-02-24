@@ -213,16 +213,16 @@ function move() {
       ws.updateGrid(ox, oy, go);
       return;
     } else {
-      if(collision instanceof GameObject) {
-        if(go.lastCollidedWith == collision.id || collision.lastCollidedWith == go.id){
-          go.x += go.dx;
-          go.y += go.dy;
-          go.setBB();
-          ws.updateGrid(ox, oy, go);
-          return;
-        }
-        return momentum(go, collision);
-      }
+      // if(collision instanceof GameObject) {
+      //   if(go.lastCollidedWith == collision.id || collision.lastCollidedWith == go.id){
+      //     go.x += go.dx;
+      //     go.y += go.dy;
+      //     go.setBB();
+      //     ws.updateGrid(ox, oy, go);
+      //     return;
+      //   }
+      //   return momentum(go, collision);
+      // }
     }
     // more expensive collision check to be run only
     // when there is a collision
